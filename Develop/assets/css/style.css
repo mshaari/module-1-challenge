@@ -134,7 +134,8 @@ main {
     max-width: 150px;
 }
 
-.search-engine-optimization {
+/*Consolidated the CSS for ".search-engine-optimization img" ".online-reputation-management img" and ".social-media-marketing img" into "main section" since it was not necessary and could be generalized as "main section"*/
+main section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,33 +144,8 @@ main {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
+/*Consolidated the CSS for ".search-engine-optimization img" ".online-reputation-management img" and ".social-media-marketing img" into "main img"*/
+main img {
     max-height: 200px;
 }
 
