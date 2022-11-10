@@ -1,13 +1,16 @@
+/* This Universal Selector means that all the content on our page will have  */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* This selector means that everything in the <body> tag will have a background color of #d9dcd6*/
 body {
     background-color: #d9dcd6;
 }
 
+/* This selector means that everything in the <header> tag will have a padding of 20px, will have the given font family, will have a background color of #2a607c and will have a text color of #ffffff*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +18,18 @@ header {
     color: #ffffff;
 }
 
+/* This selector means that all <h1> tags within a <header> tag will be display inline-block and have a font size of 48px*/
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* This selector means that all elements with class="seo" within an <h1> tag within a <header> will have a text color of #d9dcd6*/
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/* This selector means that all <article> tags within a <header> tag will have a top-padding of 15px, margin-right of 20px, will float right, have the given font family, and will have font-size 20px*/
 header article {
     padding-top: 15px;
     margin-right: 20px;
@@ -37,20 +43,24 @@ header article ul {
     list-style-type: none;
 }
 
+/* This selector means all <li> items within a <ul> within an <article> within a <header> will be display inline-block and have a margin-left of 25px */
 header article ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* This selector means that all <a> tags will have color #ffffff and will have no text-decoration */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This selector means that all <p> tags will have font size 16px */
 p {
     font-size: 16px;
 }
 
+/* This selector means that all elements with class="hero" will have height of 800px, width of 100%, margin-bottom of 25px, background-image of the given URL, background-size set to cover, and background-position of center */
 .hero {
     height: 800px;
     width: 100%;
