@@ -32,6 +32,7 @@ header article {
     font-size: 20px;
 }
 
+/*Is this even necessary*/
 header article ul {
     list-style-type: none;
 }
