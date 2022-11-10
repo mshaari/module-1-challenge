@@ -5,11 +5,6 @@
     margin: 0;
 }
 
-/* This selector means that everything in the <body> tag will have a background color of #d9dcd6*/
-body {
-    background-color: #d9dcd6;
-}
-
 /* This selector means that everything in the <header> tag will have a padding of 20px, will have the given font family, will have a background color of #2a607c and will have a text color of #ffffff*/
 header {
     padding: 20px;
@@ -29,8 +24,8 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
-/* This selector means that all <article> tags within a <header> tag will have a top-padding of 15px, margin-right of 20px, will float right, have the given font family, and will have font-size 20px*/
-header article {
+/* This selector means that all <nav> tag elements within a <header> tag will have a top-padding of 15px, margin-right of 20px, will float right, have the given font family, and will have font-size 20px*/
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -38,26 +33,26 @@ header article {
     font-size: 20px;
 }
 
-/*Is this even necessary*/
-header article ul {
+/* Any <ul> within <nav> within <header> will have no list-style-type */
+header nav ul {
     list-style-type: none;
 }
 
-/* This selector means all <li> items within a <ul> within an <article> within a <header> will be display inline-block and have a margin-left of 25px */
-header article ul li {
+/* This selector means all <li> items within a <ul> within a <nav> within a <header> will be display inline-block and have a margin-left of 25px */
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/* This selector means that all <a> tags will have color #ffffff and will have no text-decoration */
-a {
+/* This selector means that all <a> tags within an <li> within a <ul> within a <nav> within a <header> will have color #ffffff and will have no text-decoration */
+header nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-/* This selector means that all <p> tags will have font size 16px */
-p {
-    font-size: 16px;
+/* This selector means that everything in the <body> tag will have a background color of #d9dcd6*/
+body {
+    background-color: #d9dcd6;
 }
 
 /* This selector means that all elements with class="hero" will have height of 800px, width of 100%, margin-bottom of 25px, background-image of the given URL, background-size set to cover, and background-position of center */
@@ -70,16 +65,56 @@ p {
     background-position: center;
 }
 
-.float-left {
+/* This selector means that all elements within the <main> tag will have a width of 75%, will be display inline-block, and have a margin-left of 20px */
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* NOTE: Consolidated the CSS for ".search-engine-optimization img" ".online-reputation-management img" and ".social-media-marketing img" into "main section" since it was not necessary and could be generalized as "main section"
+
+This selector means that all <section> tags within a <main> tag will have a margin-bottom of 20px, 50px of padding, a height of 300px, the given font family, a background color of #0072bb, and a text-color of #ffffff */
+main section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* NOTE: Consolidated the CSS for ".search-engine-optimization img" ".online-reputation-management img" and ".social-media-marketing img" into "main img"
+
+This selector means that all <img> tags within a <main> tag will have a max-height of 200px */
+main img {
+    max-height: 200px;
+}
+
+/* This selector means that all <h2> tags within a <main> tag will have a margin-bottom of 20px and font-size of 36px */
+main h2 {
+    margin-bottom: 20px;
+    font-size: 36px;  
+}
+
+/* This selector means that all elements with class="float-left" in <main> will have a margin-right of 25px and will be float left */
+main .float-left {
     float: left;
     margin-right: 25px;
 }
 
-.float-right {
+/* This selector means that all elements with class="float-right" in <main> will have a margin-left of 25px and will be float right */
+main .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* This selector means that all <p> tags will have font size 16px */
+p {
+    font-size: 16px;
+}
+
+/* This selector means that all elements with class="benefits" will have a margin-right of 20px, will have 20px of padding, both sides will be set to clear, will be set to float:right, will have width 20%, height 100%, font family given, and background color of #2589bd */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -91,51 +126,32 @@ p {
     background-color: #2589bd;
 }
 
-/* Consolidated the .benefit-lead .benefit-brand and .benefit-cost into .benefits section*/
+/* NOTE: Consolidated the .benefit-lead .benefit-brand and .benefit-cost into .benefits section
+
+This selector means that all <section> tags within an element with class="benefits" will have a margin-bottom of 32px and a color of #ffffff*/
 .benefits section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* Consolidated .benefits-lead h3 .benefit-brand h3 and.benefit-cost h3 into .benefits h3*/
+/* NOTE: Consolidated .benefits-lead h3 .benefit-brand h3 and.benefit-cost h3 into .benefits h3
+
+This selector means that all <h3> tags within an element with class="benefits" will have a margin-bottom of 10px and will be text-align center*/
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* Consolidated .benefits-lead img .benefit-brand img and.benefit-cost img into .benefits img*/
+/* NOTE: Consolidated .benefits-lead img .benefit-brand img and.benefit-cost img into .benefits img.
+
+This selector means that all <img> tags within an element with class="benefits"  will be display:block, have 10px margin on the top and auto on the sides to center the images, and a max-width of 150px */
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/*Consolidated the CSS for ".search-engine-optimization img" ".online-reputation-management img" and ".social-media-marketing img" into "main section" since it was not necessary and could be generalized as "main section"*/
-main section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/*Consolidated the CSS for ".search-engine-optimization img" ".online-reputation-management img" and ".social-media-marketing img" into "main img"*/
-main img {
-    max-height: 200px;
-}
-
-main h2 {
-    margin-bottom: 20px;
-      font-size: 36px;  
-  }
-  
+/* This selector means that all <footer> elements will have 30px of padding, both sides will be set to clear, will have the given font family, and will be text-align center*/
 footer {
     padding: 30px;
     clear: both;
@@ -143,6 +159,7 @@ footer {
     text-align: center;
 }
 
+/* This selector means that all <h2> tag elements within a <footer> tag will have a font-size of 20px */
 footer h2 {
     font-size: 20px;
 }

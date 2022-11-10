@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<!--Rearranged the order of <head> elements to follow proper order-->
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Develop/assets/css/style.css">
     <title>Horiseon Social Solution Services, Inc.</title>
+    <link rel="stylesheet" href="Develop/assets/css/style.css">
+    <meta charset="UTF-8" />
 </head>
 
 <body>
     <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <article>
+        <nav>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -22,14 +23,13 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </article>
+        </nav>
     </header>
 
-    <!--What should this be? It's for the background image...-->
-    <figure class="hero"></figure>
+    <!--This is for the background image (which is linked through the CSS file, so it cannot exactly have alt text -->
+    <figure title="Background image of four individuals collaborating on a desk" class="hero"></figure>
 
     <!-- Removed the classes for each section under main since not necessary-->
-    
     <main> 
         <section id="search-engine-optimization">
             <img src="Develop/assets/images/search-engine-optimization.jpg" class="float-left" alt="Aesthetic desk setup with a computer, magnifying glass, cup of coffee, stationary tools in a cup, and a notebook that reads SEO in a cloud surrounded by the symbols and the words 'Backlink', 'Content', 'Headings', 'Link Building', 'Mobile Compatability', and 'Social Media'."/>
@@ -54,7 +54,7 @@
         </section>
     </main>
 
-    <!-- Removed the classes within the sections within this article since they could be removed-->
+    <!-- Removed the classes within the sections within this <article> since they were not necessary-->
     <article class="benefits">
         <section>
             <h3>Lead Generation</h3>
