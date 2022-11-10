@@ -1,11 +1,13 @@
-/* This Universal Selector means that all the content on our page will have  */
+/* This Universal Selector means that all the content on our page will have a padding of 0, margin of 0, and will have a box-sizing set to bordr-box */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/* This selector means that everything in the <header> tag will have a padding of 20px, will have the given font family, will have a background color of #2a607c and will have a text color of #ffffff*/
+/* NOTE: this is "header" and no longer ".header" 
+
+This selector means that everything in the <header> tag will have a padding of 20px, will have the given font family, will have a background color of #2a607c and will have a text color of #ffffff*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,18 +15,18 @@ header {
     color: #ffffff;
 }
 
-/* This selector means that all <h1> tags within a <header> tag will be display inline-block and have a font size of 48px*/
+/* This selector means that all <h1> tags within a <header> tag will be display inline-block and have a font size of 48px */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/* This selector means that all elements with class="seo" within an <h1> tag within a <header> will have a text color of #d9dcd6*/
+/* This selector means that all elements with class="seo" within an <h1> tag within a <header> will have a text color of #d9dcd6 */
 header h1 .seo {
     color: #d9dcd6;
 }
 
-/* This selector means that all <nav> tag elements within a <header> tag will have a top-padding of 15px, margin-right of 20px, will float right, have the given font family, and will have font-size 20px*/
+/* This selector means that all <nav> tag elements within a <header> tag will have a top-padding of 15px, margin-right of 20px, will float right, have the given font family, and will have font-size 20px */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -33,7 +35,7 @@ header nav {
     font-size: 20px;
 }
 
-/* Any <ul> within <nav> within <header> will have no list-style-type */
+/* Any <ul> within <nav> within <header> will have a list-style-type of none */
 header nav ul {
     list-style-type: none;
 }
@@ -126,15 +128,15 @@ p {
     background-color: #2589bd;
 }
 
-/* NOTE: Consolidated the .benefit-lead .benefit-brand and .benefit-cost into .benefits section
+/* NOTE: Consolidated the ".benefit-lead" ".benefit-brand" and ".benefit-cost" into ".benefits section"
 
-This selector means that all <section> tags within an element with class="benefits" will have a margin-bottom of 32px and a color of #ffffff*/
+This selector means that all <section> tags within an element with class="benefits" will have a margin-bottom of 32px and a color of #ffffff */
 .benefits section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* NOTE: Consolidated .benefits-lead h3 .benefit-brand h3 and.benefit-cost h3 into .benefits h3
+/* NOTE: Consolidated ".benefits-lead h3" ".benefit-brand h3" and ".benefit-cost h3" into ".benefits h3"
 
 This selector means that all <h3> tags within an element with class="benefits" will have a margin-bottom of 10px and will be text-align center*/
 .benefits h3 {
@@ -142,7 +144,7 @@ This selector means that all <h3> tags within an element with class="benefits" w
     text-align: center;
 }
 
-/* NOTE: Consolidated .benefits-lead img .benefit-brand img and.benefit-cost img into .benefits img.
+/* NOTE: Consolidated ".benefits-lead img" ".benefit-brand img" and ".benefit-cost img" into ".benefits img"
 
 This selector means that all <img> tags within an element with class="benefits"  will be display:block, have 10px margin on the top and auto on the sides to center the images, and a max-width of 150px */
 .benefits img {
@@ -151,7 +153,9 @@ This selector means that all <img> tags within an element with class="benefits" 
     max-width: 150px;
 }
 
-/* This selector means that all <footer> elements will have 30px of padding, both sides will be set to clear, will have the given font family, and will be text-align center*/
+/* NOTE: changed from .footer to just "footer"
+
+This selector means that all <footer> elements will have 30px of padding, both sides will be set to clear, will have the given font family, and will be text-align center */
 footer {
     padding: 30px;
     clear: both;
@@ -159,7 +163,9 @@ footer {
     text-align: center;
 }
 
-/* This selector means that all <h2> tag elements within a <footer> tag will have a font-size of 20px */
+/* NOTE: changed from .footer h2 to just "footer h2" 
+
+This selector means that all <h2> tag elements within a <footer> tag will have a font-size of 20px */
 footer h2 {
     font-size: 20px;
 }
