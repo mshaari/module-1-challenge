@@ -13,4 +13,4 @@ Below is a preview of the top of the Horiseon site, followed by the bulk of the 
 
 ## Link to Horiseon Site
 
-The Horiseon site can be accessed by clicking [here]()
+The Horiseon site can be accessed by clicking [here](https://mshaari.github.io/module-1-challenge/)
